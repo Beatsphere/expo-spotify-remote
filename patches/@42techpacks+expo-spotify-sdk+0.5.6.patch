@@ -1,0 +1,1181 @@
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build.gradle b/node_modules/@42techpacks/expo-spotify-sdk/android/build.gradle
+index 45c304c..396a60c 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/android/build.gradle
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build.gradle
+@@ -45,4 +45,5 @@ android {
+ dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.9.2'
+    implementation "com.spotify.android:auth:2.1.2"
++   implementation files('libs/spotify-app-remote-release-0.8.0.aar')
+ }
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/results.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/results.bin
+new file mode 100644
+index 0000000..7ed749e
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/results.bin
+@@ -0,0 +1 @@
++o/bundleLibRuntimeToDirDebug
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/AppRemoteConnectionConfig.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/AppRemoteConnectionConfig.dex
+new file mode 100644
+index 0000000..2f09ed2
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/AppRemoteConnectionConfig.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/BuildConfig.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/BuildConfig.dex
+new file mode 100644
+index 0000000..f2ada59
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/BuildConfig.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.dex
+new file mode 100644
+index 0000000..3b31f59
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.dex
+new file mode 100644
+index 0000000..f3048c3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.dex
+new file mode 100644
+index 0000000..d17b911
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.dex
+new file mode 100644
+index 0000000..e64635f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.dex
+new file mode 100644
+index 0000000..8cb9f19
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.dex
+new file mode 100644
+index 0000000..0afd7dc
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.dex
+new file mode 100644
+index 0000000..210988f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.dex
+new file mode 100644
+index 0000000..021f801
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.dex
+new file mode 100644
+index 0000000..c1c2f30
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.dex
+new file mode 100644
+index 0000000..18132e1
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.dex
+new file mode 100644
+index 0000000..6db1ef4
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.dex
+new file mode 100644
+index 0000000..40f8dba
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.dex
+new file mode 100644
+index 0000000..afad9af
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.dex
+new file mode 100644
+index 0000000..99b0925
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.dex
+new file mode 100644
+index 0000000..8656b3d
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.dex
+new file mode 100644
+index 0000000..439767c
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.dex
+new file mode 100644
+index 0000000..8961887
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.dex
+new file mode 100644
+index 0000000..34509b9
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.dex
+new file mode 100644
+index 0000000..0638bde
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.dex
+new file mode 100644
+index 0000000..9a6317a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule.dex
+new file mode 100644
+index 0000000..2947614
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/ExpoSpotifySDKModule.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/SpotifyConfigOptions.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/SpotifyConfigOptions.dex
+new file mode 100644
+index 0000000..dc11889
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/expo/modules/spotifysdk/SpotifyConfigOptions.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin
+new file mode 100644
+index 0000000..601f245
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/a49fe52557b7bca2651e6d4c3ac53335/transformed/bundleLibRuntimeToDirDebug/desugar_graph.bin differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/results.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/transformed/classes/classes_dex/classes.dex b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..33695e2
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/.transforms/dfe1fb0d10f1678aa96d1fecf1209c16/transformed/classes/classes_dex/classes.dex differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/generated/source/buildConfig/debug/expo/modules/spotifysdk/BuildConfig.java b/node_modules/@42techpacks/expo-spotify-sdk/android/build/generated/source/buildConfig/debug/expo/modules/spotifysdk/BuildConfig.java
+new file mode 100644
+index 0000000..6372d7d
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/generated/source/buildConfig/debug/expo/modules/spotifysdk/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package expo.modules.spotifysdk;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "expo.modules.spotifysdk";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..2222441
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="expo.modules.spotifysdk" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++    <application>
++        <meta-data
++            android:name="spotifyClientId"
++            android:value="dollar_openBracket_spotifyClientId_closeBracket" />
++        <meta-data
++            android:name="spotifyRedirectUri"
++            android:value="dollar_openBracket_spotifyRedirectUri_closeBracket" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..e54df78
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "expo.modules.spotifysdk",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar
+new file mode 100644
+index 0000000..23b5ee0
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..030121c
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..fe234e3
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Fri Feb 27 19:27:35 IST 2026
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..1cf883e
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugAssets/merger.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+new file mode 100644
+index 0000000..c6ff235
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/debug/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/shader_assets/debug/compileDebugShaders/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..6991d5d
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..8caa6b1
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module
+new file mode 100644
+index 0000000..9dbc290
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/java_res/debug/processDebugJavaRes/out/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/expo/modules/spotifysdk/BuildConfig.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/expo/modules/spotifysdk/BuildConfig.class
+new file mode 100644
+index 0000000..ee6589e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/expo/modules/spotifysdk/BuildConfig.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..f166480
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,23 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="expo.modules.spotifysdk" >
++4
++5    <uses-sdk android:minSdkVersion="24" />
++6
++7    <application>
++7-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:3:5-10:19
++8        <meta-data
++8-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:4:9-6:50
++9            android:name="spotifyClientId"
++9-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:5:13-43
++10            android:value="${spotifyClientId}" />
++10-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:6:13-47
++11        <meta-data
++11-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:7:9-9:53
++12            android:name="spotifyRedirectUri"
++12-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:8:13-46
++13            android:value="${spotifyRedirectUri}" />
++13-->/Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:9:13-50
++14    </application>
++15
++16</manifest>
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..4bab547
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="expo.modules.spotifysdk" >
++
++    <uses-sdk android:minSdkVersion="24" />
++
++    <application>
++        <meta-data
++            android:name="spotifyClientId"
++            android:value="${spotifyClientId}" />
++        <meta-data
++            android:name="spotifyRedirectUri"
++            android:value="${spotifyRedirectUri}" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module
+new file mode 100644
+index 0000000..9dbc290
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class
+new file mode 100644
+index 0000000..cde85b8
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/BuildConfig.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/BuildConfig.class
+new file mode 100644
+index 0000000..ee6589e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/BuildConfig.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class
+new file mode 100644
+index 0000000..bc0cf29
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class
+new file mode 100644
+index 0000000..538423b
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class
+new file mode 100644
+index 0000000..e37671c
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class
+new file mode 100644
+index 0000000..e6929c5
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class
+new file mode 100644
+index 0000000..eda30cc
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class
+new file mode 100644
+index 0000000..9152c74
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class
+new file mode 100644
+index 0000000..3e3c1c3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class
+new file mode 100644
+index 0000000..f6de010
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class
+new file mode 100644
+index 0000000..6e93823
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class
+new file mode 100644
+index 0000000..59f6e9f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class
+new file mode 100644
+index 0000000..5a964b3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class
+new file mode 100644
+index 0000000..d5ce1df
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class
+new file mode 100644
+index 0000000..531d987
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class
+new file mode 100644
+index 0000000..c9dba94
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class
+new file mode 100644
+index 0000000..b0696ee
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class
+new file mode 100644
+index 0000000..4c64462
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class
+new file mode 100644
+index 0000000..91893ea
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class
+new file mode 100644
+index 0000000..9f66af3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class
+new file mode 100644
+index 0000000..e49eaf2
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class
+new file mode 100644
+index 0000000..8784b03
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class
+new file mode 100644
+index 0000000..d15eaee
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/SpotifyConfigOptions.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/SpotifyConfigOptions.class
+new file mode 100644
+index 0000000..9a30f68
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/expo/modules/spotifysdk/SpotifyConfigOptions.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar
+new file mode 100644
+index 0000000..cec4b6c
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..9ff6013
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++expo.modules.spotifysdk
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+new file mode 100644
+index 0000000..bdf584a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+new file mode 100644
+index 0000000..a63dd45
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+new file mode 100644
+index 0000000..58526d7
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+new file mode 100644
+index 0000000..d8ede80
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+new file mode 100644
+index 0000000..9db45fe
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+new file mode 100644
+index 0000000..8fa81dc
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+new file mode 100644
+index 0000000..cdc9c66
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+new file mode 100644
+index 0000000..3c0b3bd
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+new file mode 100644
+index 0000000..a9f80ae
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+new file mode 100644
+index 0000000..fe23964
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+new file mode 100644
+index 0000000..1ffb29a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+new file mode 100644
+index 0000000..784868f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..cdc9c66
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..3c0b3bd
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+new file mode 100644
+index 0000000..a9f80ae
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..2d326c4
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+new file mode 100644
+index 0000000..1ffb29a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+new file mode 100644
+index 0000000..7e54417
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..fce1135
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..5cef5cb
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+new file mode 100644
+index 0000000..c14ff15
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..8b633a5
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+new file mode 100644
+index 0000000..3b98701
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+new file mode 100644
+index 0000000..ca949a6
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+new file mode 100644
+index 0000000..14e4406
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+new file mode 100644
+index 0000000..60a4017
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+new file mode 100644
+index 0000000..93a595b
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+new file mode 100644
+index 0000000..6f66704
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+new file mode 100644
+index 0000000..9a4b39e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+new file mode 100644
+index 0000000..bdf584a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+new file mode 100644
+index 0000000..a63dd45
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+new file mode 100644
+index 0000000..58526d7
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+new file mode 100644
+index 0000000..7e708cd
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+new file mode 100644
+index 0000000..9db45fe
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+new file mode 100644
+index 0000000..500f09f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+new file mode 100644
+index 0000000..7262ef0
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+new file mode 100644
+index 0000000..b9d571f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+new file mode 100644
+index 0000000..01bdaa1
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+new file mode 100644
+index 0000000..dc71704
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+new file mode 100644
+index 0000000..e71fada
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+new file mode 100644
+index 0000000..d5caa98
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+new file mode 100644
+index 0000000..d1a8531
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+new file mode 100644
+index 0000000..81031c2
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+new file mode 100644
+index 0000000..a9f80ae
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+new file mode 100644
+index 0000000..4c06491
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+new file mode 100644
+index 0000000..1ffb29a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+new file mode 100644
+index 0000000..166c057
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+@@ -0,0 +1,2 @@
++1
++0
+\ No newline at end of file
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+new file mode 100644
+index 0000000..bdf584a
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+new file mode 100644
+index 0000000..a63dd45
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+new file mode 100644
+index 0000000..58526d7
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+new file mode 100644
+index 0000000..5875372
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+new file mode 100644
+index 0000000..9db45fe
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+new file mode 100644
+index 0000000..8aad32b
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+new file mode 100644
+index 0000000..08e7df1
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+new file mode 100644
+index 0000000..b7da01d
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+new file mode 100644
+index 0000000..a8cb771
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+new file mode 100644
+index 0000000..1b1cb4d
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+new file mode 100644
+index 0000000..4c92449
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+new file mode 100644
+index 0000000..b7f718f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+new file mode 100644
+index 0000000..e579571
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+new file mode 100644
+index 0000000..08c8b03
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+new file mode 100644
+index 0000000..69f9d28
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+new file mode 100644
+index 0000000..a54312d
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+new file mode 100644
+index 0000000..263b35f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+new file mode 100644
+index 0000000..eafd362
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/@42techpacks/expo-spotify-sdk/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..c23585c
+--- /dev/null
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,30 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:2:1-11:12
++INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:2:1-11:12
++	package
++		INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:2:11-69
++application
++ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:3:5-10:19
++meta-data#spotifyClientId
++ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:4:9-6:50
++	android:value
++		ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:6:13-47
++	android:name
++		ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:5:13-43
++meta-data#spotifyRedirectUri
++ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:7:9-9:53
++	android:value
++		ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:9:13-50
++	android:name
++		ADDED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml:8:13-46
++uses-sdk
++INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml
++INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/ayushmishra/Projects/beatsphere/beatsphere-app/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..2479c20
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module
+new file mode 100644
+index 0000000..9dbc290
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/META-INF/42techpacks-expo-spotify-sdk_debug.kotlin_module differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class
+new file mode 100644
+index 0000000..cde85b8
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/AppRemoteConnectionConfig.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class
+new file mode 100644
+index 0000000..bc0cf29
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$WhenMappings.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class
+new file mode 100644
+index 0000000..538423b
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$3$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class
+new file mode 100644
+index 0000000..e37671c
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class
+new file mode 100644
+index 0000000..e6929c5
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$4$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class
+new file mode 100644
+index 0000000..eda30cc
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class
+new file mode 100644
+index 0000000..9152c74
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$5$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class
+new file mode 100644
+index 0000000..3e3c1c3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$1$7$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class
+new file mode 100644
+index 0000000..f6de010
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class
+new file mode 100644
+index 0000000..6e93823
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class
+new file mode 100644
+index 0000000..59f6e9f
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$3.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class
+new file mode 100644
+index 0000000..5a964b3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$4.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class
+new file mode 100644
+index 0000000..d5ce1df
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$5.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class
+new file mode 100644
+index 0000000..531d987
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunction$6.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class
+new file mode 100644
+index 0000000..c9dba94
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class
+new file mode 100644
+index 0000000..b0696ee
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class
+new file mode 100644
+index 0000000..4c64462
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$3.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class
+new file mode 100644
+index 0000000..91893ea
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$AsyncFunctionWithPromise$4.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class
+new file mode 100644
+index 0000000..9f66af3
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class
+new file mode 100644
+index 0000000..e49eaf2
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$FunctionWithoutArgs$2.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class
+new file mode 100644
+index 0000000..8784b03
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule$definition$lambda$7$$inlined$OnActivityResult$1.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class
+new file mode 100644
+index 0000000..d15eaee
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/ExpoSpotifySDKModule.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/SpotifyConfigOptions.class b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/SpotifyConfigOptions.class
+new file mode 100644
+index 0000000..9a30f68
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/build/tmp/kotlin-classes/debug/expo/modules/spotifysdk/SpotifyConfigOptions.class differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/libs/spotify-app-remote-release-0.8.0.aar b/node_modules/@42techpacks/expo-spotify-sdk/android/libs/spotify-app-remote-release-0.8.0.aar
+new file mode 100644
+index 0000000..ec49aad
+Binary files /dev/null and b/node_modules/@42techpacks/expo-spotify-sdk/android/libs/spotify-app-remote-release-0.8.0.aar differ
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/java/expo/modules/spotifysdk/ExpoSpotifySDKModule.kt b/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/java/expo/modules/spotifysdk/ExpoSpotifySDKModule.kt
+index 33cb89b..e0cbfd4 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/java/expo/modules/spotifysdk/ExpoSpotifySDKModule.kt
++++ b/node_modules/@42techpacks/expo-spotify-sdk/android/src/main/java/expo/modules/spotifysdk/ExpoSpotifySDKModule.kt
+@@ -4,6 +4,11 @@ import android.content.pm.PackageManager
+ import expo.modules.kotlin.Promise
+ import expo.modules.kotlin.modules.Module
+ import expo.modules.kotlin.modules.ModuleDefinition
++import com.spotify.android.appremote.api.ConnectionParams
++import com.spotify.android.appremote.api.Connector
++import com.spotify.android.appremote.api.SpotifyAppRemote
++import com.spotify.protocol.types.Track
++import com.spotify.protocol.types.UserStatus
+ import com.spotify.sdk.android.auth.AuthorizationClient
+ import com.spotify.sdk.android.auth.AuthorizationRequest
+ import com.spotify.sdk.android.auth.AuthorizationResponse
+@@ -33,7 +38,19 @@ class SpotifyConfigOptions : Record {
+   val tokenRefreshURL: String? = null
+ }
+ 
++class AppRemoteConnectionConfig : Record {
++  @Field
++  val clientID: String = ""
++
++  @Field
++  val redirectURL: String = ""
++  
++  @Field
++  val accessToken: String? = null
++}
++
+ class ExpoSpotifySDKModule : Module() {
++  private var mSpotifyAppRemote: SpotifyAppRemote? = null
+ 
+   private val requestCode = 2095
+   private var requestConfig: SpotifyConfigOptions? = null
+@@ -51,6 +68,74 @@ class ExpoSpotifySDKModule : Module() {
+       return@Function SpotifyNativeAuthUtil.isSpotifyInstalled(context)
+     }
+ 
++    Function("isAppRemoteConnected") {
++      return@Function mSpotifyAppRemote?.isConnected ?: false
++    }
++
++    AsyncFunction("connectAppRemoteAsync") { config: AppRemoteConnectionConfig, promise: Promise ->
++        val connectionParams = ConnectionParams.Builder(config.clientID)
++          .setRedirectUri(config.redirectURL)
++          .showAuthView(true)
++          .build()
++ 
++        SpotifyAppRemote.connect(appContext.reactContext, connectionParams, object : Connector.ConnectionListener {
++          override fun onConnected(spotifyAppRemote: SpotifyAppRemote) {
++            mSpotifyAppRemote = spotifyAppRemote
++            promise.resolve(mapOf("connected" to true))
++          }
++ 
++          override fun onFailure(throwable: Throwable) {
++            promise.reject("ERR_SPOTIFY_REMOTE", throwable.message, throwable)
++          }
++        })
++    }
++ 
++    AsyncFunction("getPlayerStateAsync") { promise: Promise ->
++        val remote = mSpotifyAppRemote
++        if (remote == null || !remote.isConnected) {
++            promise.resolve(null)
++            return@AsyncFunction
++        }
++        remote.playerApi.playerState.setResultCallback { playerState ->
++          val track = playerState.track
++          if (track != null) {
++            promise.resolve(mapOf(
++              "track" to mapOf(
++                "name" to track.name,
++                "artist" to mapOf("name" to track.artist.name),
++                "imageUri" to track.imageUri.raw
++              ),
++              "isPaused" to playerState.isPaused
++            ))
++          } else {
++             promise.resolve(null)
++          }
++        }.setErrorCallback { throwable ->
++           promise.reject("ERR_PLAYER_STATE", throwable.message, throwable)
++        }
++    }
++
++    AsyncFunction("getUserStatusAsync") { promise: Promise ->
++       val subscription = mSpotifyAppRemote?.userApi?.subscribeToUserStatus()
++       if (subscription == null) {
++           promise.resolve(null)
++           return@AsyncFunction
++       }
++       
++       subscription.setEventCallback { userStatus ->
++            // Resolve with the first event and stop listening
++            promise.resolve(mapOf(
++                "code" to userStatus.code,
++                "shortMessage" to userStatus.shortMessage,
++                "longMessage" to userStatus.longMessage
++            ))
++            subscription.cancel()
++       }.setErrorCallback { throwable ->
++            promise.reject("ERR_USER_STATUS", throwable.message, throwable)
++            subscription.cancel()
++       }
++    }
++
+     AsyncFunction("authenticateAsync") { config: SpotifyConfigOptions, promise: Promise ->
+       try {
+         val packageInfo =
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/build/ExpoSpotifySDK.types.d.ts b/node_modules/@42techpacks/expo-spotify-sdk/build/ExpoSpotifySDK.types.d.ts
+index 8351512..15879b0 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/build/ExpoSpotifySDK.types.d.ts
++++ b/node_modules/@42techpacks/expo-spotify-sdk/build/ExpoSpotifySDK.types.d.ts
+@@ -26,7 +26,9 @@ export interface AddToQueueResult {
+     success: boolean;
+ }
+ export interface AppRemoteConnectionConfig {
+-    accessToken: string;
++    clientID: string;
++    redirectURL: string;
++    accessToken?: string;
+ }
+ export interface AppRemoteConnectionResult {
+     connected: boolean;
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/build/index.d.ts b/node_modules/@42techpacks/expo-spotify-sdk/build/index.d.ts
+index 325a2d5..5881f7d 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/build/index.d.ts
++++ b/node_modules/@42techpacks/expo-spotify-sdk/build/index.d.ts
+@@ -2,6 +2,7 @@ import { Subscription } from "expo-modules-core";
+ import { SpotifyConfig, SpotifySession, AuthorizeAndPlayURIResult, PlaybackResult, SkipTrackResult, AppRemoteConnectionConfig, AppRemoteConnectionResult, AppRemoteDisconnectionResult, AppRemoteConnectionFailureEvent, AppRemoteDisconnectedEvent, AppRemoteConnectedEvent, PlayerStateResult, PlayerStateSubscriptionResult, PlayerStateChangedEvent, AddToQueueConfig, AddToQueueResult } from "./ExpoSpotifySDK.types";
+ declare function isAvailable(): boolean;
+ declare function authenticateAsync(config: SpotifyConfig): Promise<SpotifySession>;
++declare function renewSessionAsync(): Promise<{ accessToken: string; refreshToken: string }>;
+ /**
+  * Authorizes with Spotify and immediately starts playback of the provided URI
+  * @param uri The Spotify URI to play
+@@ -64,6 +65,7 @@ declare function addAppRemoteDisconnectedListener(listener: (event: AppRemoteDis
+ declare function addPlayerStateChangedListener(listener: (event: PlayerStateChangedEvent) => void): Subscription;
+ declare const Authenticate: {
+     authenticateAsync: typeof authenticateAsync;
++    renewSessionAsync: typeof renewSessionAsync;
+ };
+ declare const AppRemote: {
+     authorizeAndPlayURIAsync: typeof authorizeAndPlayURIAsync;
+@@ -80,6 +82,7 @@ declare const AppRemote: {
+     addAppRemoteConnectionFailureListener: typeof addAppRemoteConnectionFailureListener;
+     addAppRemoteDisconnectedListener: typeof addAppRemoteDisconnectedListener;
+     getPlayerStateAsync: typeof getPlayerStateAsync;
++    getUserStatusAsync: () => Promise<{ code: number, shortMessage: string, longMessage: string } | null>;
+     subscribeToPlayerStateAsync: typeof subscribeToPlayerStateAsync;
+     unsubscribeFromPlayerStateAsync: typeof unsubscribeFromPlayerStateAsync;
+     addPlayerStateChangedListener: typeof addPlayerStateChangedListener;
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/build/index.js b/node_modules/@42techpacks/expo-spotify-sdk/build/index.js
+index 75c796c..413d782 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/build/index.js
++++ b/node_modules/@42techpacks/expo-spotify-sdk/build/index.js
+@@ -9,6 +9,9 @@ function authenticateAsync(config) {
+     }
+     return ExpoSpotifySDKModule.authenticateAsync(config);
+ }
++function renewSessionAsync() {
++    return ExpoSpotifySDKModule.renewSessionAsync();
++}
+ /**
+  * Authorizes with Spotify and immediately starts playback of the provided URI
+  * @param uri The Spotify URI to play
+@@ -23,7 +26,7 @@ function isAppRemoteConnected() {
+     return ExpoSpotifySDKModule.isAppRemoteConnected();
+ }
+ function connectAppRemoteAsync(config) {
+-    if (!config.accessToken) {
++    if (false && !config.accessToken) {
+         throw new Error("accessToken is required");
+     }
+     return ExpoSpotifySDKModule.connectAppRemoteAsync(config);
+@@ -60,6 +63,13 @@ function pauseAsync() {
+ function getPlayerStateAsync() {
+     return ExpoSpotifySDKModule.getPlayerStateAsync();
+ }
++/**
++ * Gets the current user status
++ * @returns Promise that resolves with the user status
++ */
++function getUserStatusAsync() {
++    return ExpoSpotifySDKModule.getUserStatusAsync();
++}
+ /**
+  * Subscribes to player state changes
+  * @returns Promise that resolves with a success boolean
+@@ -115,6 +125,7 @@ function addPlayerStateChangedListener(listener) {
+ }
+ const Authenticate = {
+     authenticateAsync,
++    renewSessionAsync,
+ };
+ const AppRemote = {
+     authorizeAndPlayURIAsync,
+@@ -131,6 +142,7 @@ const AppRemote = {
+     addAppRemoteConnectionFailureListener,
+     addAppRemoteDisconnectedListener,
+     getPlayerStateAsync,
++    getUserStatusAsync,
+     subscribeToPlayerStateAsync,
+     unsubscribeFromPlayerStateAsync,
+     addPlayerStateChangedListener,
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySDKModule.swift b/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySDKModule.swift
+index 95268d1..9ae49a9 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySDKModule.swift
++++ b/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySDKModule.swift
+@@ -56,6 +56,23 @@ public class ExpoSpotifySDKModule: Module {
+       }
+     }
+ 
++    AsyncFunction("renewSessionAsync") { (promise: Promise) in
++      guard spotifySession.sessionManager != nil else {
++        promise.reject("NOT_INITIALIZED", "Spotify session manager not initialized. Call authenticateAsync first.")
++        return
++      }
++
++      spotifySession.renewSession().done { session in
++        spotifyAppRemote.accessToken = session.accessToken
++        promise.resolve([
++          "accessToken": session.accessToken,
++          "refreshToken": session.refreshToken ?? ""
++        ])
++      }.catch { error in
++        promise.reject("RENEW_FAILED", error.localizedDescription)
++      }
++    }
++
+     AsyncFunction("authorizeAndPlayURIAsync") { (config: [String: Any], promise: Promise) in
+       log.info("authorize and play URI async called")
+       guard let uri = config["uri"] as? String else {
+diff --git a/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySessionManager.swift b/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySessionManager.swift
+index 2d5df16..444a0da 100644
+--- a/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySessionManager.swift
++++ b/node_modules/@42techpacks/expo-spotify-sdk/ios/ExpoSpotifySessionManager.swift
+@@ -73,6 +73,19 @@ final class ExpoSpotifySessionManager: NSObject {
+         }
+     }
+ 
++    func renewSession() -> PromiseKit.Promise<SPTSession> {
++        return Promise { seal in
++            guard let sessionManager = self.sessionManager else {
++                seal.reject(SessionManagerError.notInitialized)
++                return
++            }
++            self.authPromiseSeal = seal
++            DispatchQueue.main.async {
++                sessionManager.renewSession()
++            }
++        }
++    }
++
+     func spotifyAppInstalled() -> Bool {
+         guard let sessionManager = sessionManager else {
+             NSLog("SPTSessionManager not initialized")

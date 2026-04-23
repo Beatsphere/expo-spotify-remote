@@ -1,0 +1,59 @@
+{
+  "name": "@beatsphere/expo-spotify-remote",
+  "version": "0.1.0",
+  "description": "High-level Spotify App Remote wrapper for Expo — authentication, now playing detection, lifecycle management, and token refresh with battle-tested retry logic.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "libs/",
+    "patches/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "expo",
+    "spotify",
+    "react-native",
+    "app-remote",
+    "now-playing",
+    "music",
+    "streaming",
+    "authentication"
+  ],
+  "author": "BeatSphere <hello@beatsphere.app>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AyushH2k/expo-spotify-remote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AyushH2k/expo-spotify-remote/issues"
+  },
+  "homepage": "https://github.com/AyushH2k/expo-spotify-remote#readme",
+  "peerDependencies": {
+    "@42techpacks/expo-spotify-sdk": ">=0.5.0",
+    "@react-native-async-storage/async-storage": ">=2.0.0",
+    "expo": ">=51.0.0",
+    "expo-secure-store": ">=13.0.0",
+    "react-native": ">=0.73.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-async-storage/async-storage": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@42techpacks/expo-spotify-sdk": "^0.5.6",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "expo-secure-store": "^14.2.2",
+    "react-native": "^0.76.0",
+    "typescript": "^5.5.0"
+  }
+}
