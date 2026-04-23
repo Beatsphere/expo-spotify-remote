@@ -1,6 +1,6 @@
 # @beatsphere/expo-spotify-remote
 
-High-level Spotify App Remote wrapper for Expo/React Native. Battle-tested in [BeatSphere](https://beatsphere.app).
+High-level Spotify App Remote wrapper for Expo/React Native. Battle-tested in [BeatSphere](https://beatsphere.live).
 
 Built on top of [`@42techpacks/expo-spotify-sdk`](https://github.com/nichochar/expo-spotify-sdk), this package adds:
 
