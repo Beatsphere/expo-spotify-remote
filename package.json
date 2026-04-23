@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AyushH2k/expo-spotify-remote.git"
+    "url": "https://github.com/Beatsphere/expo-spotify-remote.git"
   },
   "bugs": {
-    "url": "https://github.com/AyushH2k/expo-spotify-remote/issues"
+    "url": "https://github.com/Beatsphere/expo-spotify-remote/issues"
   },
-  "homepage": "https://github.com/AyushH2k/expo-spotify-remote#readme",
+  "homepage": "https://github.com/Beatsphere/expo-spotify-remote#readme",
   "peerDependencies": {
     "@42techpacks/expo-spotify-sdk": ">=0.5.0",
     "@react-native-async-storage/async-storage": ">=2.0.0",
